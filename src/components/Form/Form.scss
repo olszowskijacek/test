@@ -1,0 +1,42 @@
+@import "../../assets/variables.scss";
+
+
+.form {
+    max-width: 550px;
+    background-color: $main-color;
+    margin: 50px 80px;
+    border-radius: 30px;
+    padding: 15px;
+    color: $text-color;
+    border: 6px solid blue;
+    display: flex;
+    .section {
+        border-right: 3px solid $secondary-color;
+        padding: 10px;
+        flex-grow: 1;
+
+        h2 {
+            font-size: 32px;
+            text-align: center;
+        }
+        .list {
+            border: 1px solid black;
+            list-style-type: none;
+            padding-left: 5px;
+        }
+    
+    }
+    .submit-button {
+        border: 2px solid black;
+        
+    }
+}
+@media (max-width:950px) {
+    .form {
+        flex-direction: column;
+        .section{
+            border-right: none;
+            border-bottom: 3px solid $secondary-color;
+        }
+    }
+}

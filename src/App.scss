@@ -1,0 +1,9 @@
+@import './assets/variables.scss';
+
+
+.App {
+    max-width: 1600px;
+    height: 100vh;
+    margin: auto;
+    background-color: $background-color;
+}
